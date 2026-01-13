@@ -352,6 +352,7 @@
             background: linear-gradient(135deg, rgba(0, 212, 255, 0.05), transparent);
             opacity: 0;
             transition: opacity 0.4s;
+            pointer-events: none;
         }
         .project-image img {
             width: 130px;
@@ -444,6 +445,8 @@
         .project-links {
             display: flex;
             gap: 1rem;
+            position: relative;
+            z-index: 2;
         }
 
         .project-link {
